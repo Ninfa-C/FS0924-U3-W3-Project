@@ -5,7 +5,7 @@ const Explore = () => {
   return (
     <>
       <h5 className="mb-3 fw-bolder">Altro da Esplorare</h5>
-      <Row className="w-100 ">
+      <Row className="w-100 mb-5">
         <ExplorerCard text="Esplora per genere" />
         <ExplorerCard text="Decenni" />
         <ExplorerCard text="Attività e stati d'animo" />

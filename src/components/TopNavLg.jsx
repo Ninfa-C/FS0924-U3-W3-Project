@@ -6,6 +6,7 @@ import {
   Shuffle,
   SkipEnd,
   SkipStart,
+  VolumeUpFill,
 } from "react-bootstrap-icons";
 
 const TopNavLg = () => {
@@ -40,7 +41,8 @@ const TopNavLg = () => {
             />
           </Col>
 
-          <Col className="d-flex align-items-center">
+          <Col className="d-flex align-items-center justify-content-end">
+          <VolumeUpFill color="white" size={20} className="me-2"/>
             <div aria-valuemin="0" aria-valuemax="100" className="me-3">
               <input type="range" id="Barra" value="30" />
             </div>
