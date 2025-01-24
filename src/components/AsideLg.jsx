@@ -8,7 +8,8 @@ const AsideLg = () => {
 
   return (
     <>
-      <Image
+<div className="px-3">
+          <Image
         src="public\assets\logos\music.svg"
         alt="Apple Music Logo"
         style={{ filter: "invert(0.9)" }}
@@ -52,6 +53,9 @@ const AsideLg = () => {
           <p className=" ">Radio</p>
         </div>
       </Link>
+</div>
+
+
     </>
   );
 };

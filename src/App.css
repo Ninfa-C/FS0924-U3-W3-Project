@@ -35,6 +35,11 @@ p {
   border: none;
 }
 
+.bg-logo{
+  background-color: #4D4D4D;
+  height: 40px;
+}
+
 .navbar {
   align-items: center;
 }

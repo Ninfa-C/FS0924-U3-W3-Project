@@ -13,6 +13,7 @@ const MyHomepage = () => {
     <>
       <Container fluid className="">
       {lg ? < TopNavLg/> : ''}
+      <div className="px-4">
         <h1 className="title mt-4">Novità</h1>
         <MultiItemCarousel />
         <h5 className="mb-3 fw-bolder">
@@ -24,6 +25,8 @@ const MyHomepage = () => {
         <SecondCarousel />
         <Suggested />
         <Explore />
+      </div>
+        
       </Container>
     </>
   );

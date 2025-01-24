@@ -34,11 +34,14 @@ const TopNavLg = () => {
             </div>
           </Col>
           <Col>
-            <Image
+          <div className="bg-logo d-flex align-items-center justify-content-center">
+             <Image
               src="public\assets\logos\apple.svg"
               alt="Apple music Logo"
               style={{ filter: "invert(0.9)" }}
             />
+          </div>
+           
           </Col>
 
           <Col className="d-flex align-items-center justify-content-end">
