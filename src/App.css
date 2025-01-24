@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  line-height: 1.15;
+  text-size-adjust: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", serif;
+  background-color: #1F1F1F;
+  color: whitesmoke;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.bg-custom-light {
+  background-color: #2C2C2C;
+}
+.bg-aside{
+  background-color: #252526;
+}
+
+.bg-custom-dark {
+  background-color: #1f1f1f;
+}
+
+.navbar {
+  align-items: center;
+}
+
+.nav-link, .custom {
+  opacity: 0.75;
+}
+
+.nav-link:focus,
+.nav-link:active,
+.nav-link:hover,
+.sideMenu:focus,
+.sideMenu:hover,
+.sideMenu:active,
+.custom:hover,
+.custom:active,
+.custom:focus {
+  opacity: 1;
+}
+
+.sideMenu:hover{
+  background-color: #2e2e2e;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.nav-link,
+.text-red-custom, .bi {
+  color: #fa586a;
+}
+.navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.bi-heart, .bi-chevron-right{
+  color: rgba(240, 248, 255, 0.501);
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.245);
+  height: 2em;
+  padding: 0.5em;
+}
+
+.search-container input::placeholder {
+  font-size: 1em;
+}
+
+.search-container input,
+.search-container input:focus,
+.search-container input:-webkit-autofill,
+.search-container input:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  font-size: 0.8em;
+  background-color: #1f1f1f !important;
+  color: rgba(255, 255, 255, 0.679) !important;
+  box-shadow: none !important;
+  outline: none;
+  height: 1em;
+  border: none;
+  opacity: 0.5;
+}
+
+.title {
+  font-size: 2.8em;
+  font-weight: 900;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.046);
+  padding-bottom: 0.3em;
+}
+
+.song-title,
+.radio-title {
+  display: -webkit-box;
+  -webkit-box-direction: vertical;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.song-title {
+  height: 1.3rem;
+}
+
+.radio-title{
+  height: 2.8em;
+}
+
+.progress-bar {
+  background-color: transparent !important;
+}
+
+input[type="range"] {
+  appearance: none;
+  border-radius: 25px;
+  background-color: #2e2e2e;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 10px;
+  background: #ffffff68;
+  border-radius: 25px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 10px;
+  border-radius: 25px;
+  background: #f7f5f5; /* Colore del cursore */
+  border: none; /* Bordo bianco per farlo risaltare */
+  cursor: pointer;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: rgba(246, 246, 246, 0.542);
+}
