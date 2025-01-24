@@ -11,8 +11,8 @@ import {
 const TopNavLg = () => {
   return (
     <>
-      <Container>
-        <Row className=" align-items-center text-center mt-4">
+      <Container fluid className="p-0">
+        <Row className=" align-items-center text-center p-0 bg-custom-light">
           <Col>
             <div className="d-flex justify-content-center opacity-75">
               <button className="btn">
