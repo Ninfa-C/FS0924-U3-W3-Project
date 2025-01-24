@@ -11,9 +11,9 @@ const MyHomepage = () => {
   const lg = useMediaQuery({ query: '(min-width: 992px)' });
   return (
     <>
-      <Container fluid className="py-5 px-4">
+      <Container fluid className="px-4">
       {lg ? < TopNavLg/> : ''}
-        <h1 className="title">Novità</h1>
+        <h1 className="title mt-4">Novità</h1>
         <MultiItemCarousel />
         <h5 className="mb-3 fw-bolder">
           Nuovi episodi radio{" "}

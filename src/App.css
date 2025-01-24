@@ -30,6 +30,11 @@ p {
   background-color: #1f1f1f;
 }
 
+.bg-red-custom{
+  background-color: #D60017;
+  border: none;
+}
+
 .navbar {
   align-items: center;
 }
@@ -151,5 +156,5 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 input[type="range"]:focus::-webkit-slider-runnable-track {
-  background: rgba(246, 246, 246, 0.542);
+  background: rgba(246, 246, 246, 0.081);
 }

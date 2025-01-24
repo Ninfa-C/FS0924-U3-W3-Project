@@ -1,5 +1,6 @@
-import { Col, Container, Image, Row } from "react-bootstrap";
+import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import {
+  PersonFill,
   PlayFill,
   Repeat,
   Shuffle,
@@ -11,7 +12,7 @@ const TopNavLg = () => {
   return (
     <>
       <Container>
-        <Row>
+        <Row className=" align-items-center text-center mt-4">
           <Col>
             <div className="d-flex justify-content-center opacity-75">
               <button className="btn">
@@ -20,7 +21,7 @@ const TopNavLg = () => {
               <button className="btn" color="white">
                 <SkipStart color="white" className="custom" />
               </button>
-              <button type="button" id="playPause" className="btn fs-3">
+              <button className="btn fs-3">
                 <PlayFill color="white" className="custom" />
               </button>
               <button className="btn">
@@ -38,13 +39,16 @@ const TopNavLg = () => {
               style={{ filter: "invert(0.9)" }}
             />
           </Col>
-          <div
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            <input type="range" id="Barra" value="0" />
-          </div>
-          <Col></Col>
+
+          <Col className="d-flex align-items-center">
+            <div aria-valuemin="0" aria-valuemax="100" className="me-3">
+              <input type="range" id="Barra" value="30" />
+            </div>
+            <Button className="btn text-light bg-red-custom">
+              <PersonFill color="white" className="custom me-2" />
+              Accedi
+            </Button>
+          </Col>
         </Row>
       </Container>
     </>
