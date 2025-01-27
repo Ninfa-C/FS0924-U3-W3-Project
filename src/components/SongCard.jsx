@@ -11,7 +11,18 @@ const SongCard = ({ item }) => {
 
   return (
     <Col>
-      <div className="text-white">
+    {console.log(item)}
+      <div className="text-white" onClick={()=>{
+        dispatch({
+          type: "PLAY",
+          payload:{
+            preview:item.preview,
+            song:item.title,
+            artist:item.artist.name,
+            cover: item.album.cover_small
+          } 
+        })
+      }}>
         <Image
           src={item.album.cover_medium}
           alt={item.album.title}

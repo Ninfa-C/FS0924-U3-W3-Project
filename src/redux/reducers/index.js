@@ -2,6 +2,13 @@ const initialState = {
   user: {
     favourites: [],
     language: "Italia",
+    playing: {
+      preview:'',
+      song:'',
+      artist: '',
+      cover: '',
+    }
+      
   },
   default: {
     artists: [
@@ -13,6 +20,7 @@ const initialState = {
       "Billie Eilish",
       "Olivia Rodrigo",
       "Dua Lipa",
+      "Rosalia",
       "Maluma",
       "Linkin Park",
     ],
@@ -29,6 +37,15 @@ const mainReducer = (state = initialState, action) => {
           favourites: state.user.favourites.concat(action.payload),
         },
       };
+
+      case "PLAY":
+        return{
+          ...state,
+          user:{
+            ...state.user,
+            playing: action.payload
+          }
+        }
 
     case "REMOVE":
       return {

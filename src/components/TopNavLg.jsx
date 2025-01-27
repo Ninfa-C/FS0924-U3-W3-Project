@@ -1,54 +1,25 @@
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import {
   PersonFill,
-  PlayFill,
-  Repeat,
-  Shuffle,
-  SkipEnd,
-  SkipStart,
-  VolumeUpFill,
 } from "react-bootstrap-icons";
+
 
 const TopNavLg = () => {
   return (
     <>
-      <Container fluid className="p-0">
+      <Container fluid>
         <Row className=" align-items-center text-center p-0 bg-custom-light">
-          <Col>
-            <div className="d-flex justify-content-center opacity-75">
-              <button className="btn">
-                <Shuffle color="white" className="custom" />
-              </button>
-              <button className="btn" color="white">
-                <SkipStart color="white" className="custom" />
-              </button>
-              <button className="btn fs-3">
-                <PlayFill color="white" className="custom" />
-              </button>
-              <button className="btn">
-                <SkipEnd color="white" className="custom" />
-              </button>
-              <button className="btn">
-                <Repeat color="white" className="custom" />
-              </button>
+         <Col></Col>
+          <Col className="">
+            <div className="bg-logo d-flex align-items-center justify-content-center">
+              <Image
+                src="/assets/logos/apple.svg"
+                alt="Apple music Logo"
+              />
             </div>
-          </Col>
-          <Col>
-          <div className="bg-logo d-flex align-items-center justify-content-center">
-             <Image
-              src="public\assets\logos\apple.svg"
-              alt="Apple music Logo"
-              style={{ filter: "invert(0.9)" }}
-            />
-          </div>
-           
           </Col>
 
           <Col className="d-flex align-items-center justify-content-end">
-          <VolumeUpFill color="white" size={20} className="me-2"/>
-            <div aria-valuemin="0" aria-valuemax="100" className="me-3">
-              <input type="range" id="Barra" value="30" />
-            </div>
             <Button className="btn text-light bg-red-custom">
               <PersonFill color="white" className="custom me-2" />
               Accedi

@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Button, Form, Image } from "react-bootstrap";
 import { Broadcast, Grid, House, Search } from "react-bootstrap-icons";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const AsideLg = () => {
   const [searchInput, setSearchInput] = useState();
+  const navigate = useNavigate()
 
   return (
     <>
@@ -12,15 +13,14 @@ const AsideLg = () => {
           <Image
         src="public\assets\logos\music.svg"
         alt="Apple Music Logo"
-        style={{ filter: "invert(0.9)" }}
         className="mt-4 mb-4"
       />
       <Form
         className="d-flex search-container mb-4"
-        // onSubmit={(e) => {
-        //   e.preventDefault();
-        //  // navigate(`/Cities/${searchInput}`); DA INSERIRE DOVE VOGLIO NAVIGARE
-        // }}
+        onSubmit={(e) => {
+          e.preventDefault();
+        navigate(`/Result/${searchInput}`);
+        }}
       >
         <Button type="submit" variant="link" className="p-0">
           <Search size={12} className="" />
@@ -54,8 +54,6 @@ const AsideLg = () => {
         </div>
       </Link>
 </div>
-
-
     </>
   );
 };

@@ -7,7 +7,7 @@ import CarouselCard from "./CarouselCards";
 const MultiItemCarousel = () => {
   const settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,

@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
-import { Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { ChevronRight } from "react-bootstrap-icons";
 import { useSelector } from "react-redux";
 import SongCard from "./SongCard";
@@ -53,11 +53,13 @@ const Suggested = () => {
         </span>
       </h5>
       {songs && (
-        <Row xs={3} md={5} className="song-list">
-          {songs.map((item) => (
-            <SongCard item={item} key={item.id} />
-          ))}
-        </Row>
+        <Container fluid className="p-3 ">
+          <Row xs={3} md={5} className="song-list">
+            {songs.map((item) => (
+              <SongCard item={item} key={item.id} />
+            ))}
+          </Row>
+        </Container>
       )}
     </>
   );
